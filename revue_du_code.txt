@@ -1,0 +1,8 @@
+package com.jmdoudoux.test;
+import org.apache.log4j.*;
+public class MaClasse {
+ static Logger logger = Logger.getLogger(MaClasse.class);
+ public static void main(
+ String[] args) {
+ PropertyConfigurator.configure("log4j.properties");
+ logger.info("Bonjour");
